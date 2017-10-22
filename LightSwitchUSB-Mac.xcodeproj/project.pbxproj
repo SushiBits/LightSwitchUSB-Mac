@@ -12,26 +12,39 @@
 		1D43A72C1F9B11AB00461013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D43A72B1F9B11AB00461013 /* Assets.xcassets */; };
 		1D43A72F1F9B11AB00461013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D43A72D1F9B11AB00461013 /* Main.storyboard */; };
 		1D43A7321F9B11AB00461013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43A7311F9B11AB00461013 /* main.m */; };
-		1D43A73D1F9B11AB00461013 /* LightSwitchUSB_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43A73C1F9B11AB00461013 /* LightSwitchUSB_MacTests.m */; };
-		1D43A7481F9B11AB00461013 /* LightSwitchUSB_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43A7471F9B11AB00461013 /* LightSwitchUSB_MacUITests.m */; };
+		1D43A7701F9B4ED900461013 /* HIDAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43A7601F9B4ED900461013 /* HIDAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D43A7731F9B4ED900461013 /* HIDAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43A75E1F9B4ED900461013 /* HIDAPI.framework */; };
+		1D43A7741F9B4ED900461013 /* HIDAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43A75E1F9B4ED900461013 /* HIDAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D43A77D1F9B4F2400461013 /* hidapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43A7561F9B11FC00461013 /* hidapi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1D43A7801F9B4F3D00461013 /* HIDDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43A77E1F9B4F3D00461013 /* HIDDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D43A7811F9B4F3D00461013 /* HIDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43A77F1F9B4F3D00461013 /* HIDDevice.m */; };
+		1D43A7821F9B5CF200461013 /* hid.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43A7571F9B120700461013 /* hid.m */; };
+		1D43A7851F9B950800461013 /* LightSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43A7841F9B950800461013 /* LightSwitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D43A7391F9B11AB00461013 /* PBXContainerItemProxy */ = {
+		1D43A7711F9B4ED900461013 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1D43A71A1F9B11AB00461013 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1D43A7211F9B11AB00461013;
-			remoteInfo = "LightSwitchUSB-Mac";
-		};
-		1D43A7441F9B11AB00461013 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1D43A71A1F9B11AB00461013 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D43A7211F9B11AB00461013;
-			remoteInfo = "LightSwitchUSB-Mac";
+			remoteGlobalIDString = 1D43A75D1F9B4ED900461013;
+			remoteInfo = HIDAPI;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D43A7781F9B4ED900461013 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1D43A7741F9B4ED900461013 /* HIDAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D43A7221F9B11AB00461013 /* LightSwitchUSB-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LightSwitchUSB-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,13 +56,26 @@
 		1D43A72E1F9B11AB00461013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D43A7301F9B11AB00461013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D43A7311F9B11AB00461013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1D43A7331F9B11AB00461013 /* LightSwitchUSB_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LightSwitchUSB_Mac.entitlements; sourceTree = "<group>"; };
-		1D43A7381F9B11AB00461013 /* LightSwitchUSB-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LightSwitchUSB-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D43A73C1F9B11AB00461013 /* LightSwitchUSB_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightSwitchUSB_MacTests.m; sourceTree = "<group>"; };
-		1D43A73E1F9B11AB00461013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D43A7431F9B11AB00461013 /* LightSwitchUSB-MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LightSwitchUSB-MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D43A7471F9B11AB00461013 /* LightSwitchUSB_MacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightSwitchUSB_MacUITests.m; sourceTree = "<group>"; };
-		1D43A7491F9B11AB00461013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D43A7561F9B11FC00461013 /* hidapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hidapi.h; sourceTree = "<group>"; };
+		1D43A7571F9B120700461013 /* hid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hid.m; sourceTree = "<group>"; };
+		1D43A7581F9B128C00461013 /* LightSwitchUSB-Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LightSwitchUSB-Mac.entitlements"; sourceTree = "<group>"; };
+		1D43A75E1F9B4ED900461013 /* HIDAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HIDAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D43A7601F9B4ED900461013 /* HIDAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIDAPI.h; sourceTree = "<group>"; };
+		1D43A7611F9B4ED900461013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D43A77E1F9B4F3D00461013 /* HIDDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIDDevice.h; sourceTree = "<group>"; };
+		1D43A77F1F9B4F3D00461013 /* HIDDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIDDevice.m; sourceTree = "<group>"; };
+		1D43A7831F9B950800461013 /* LightSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightSwitch.h; sourceTree = "<group>"; };
+		1D43A7841F9B950800461013 /* LightSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightSwitch.m; sourceTree = "<group>"; };
+		1D43A7861F9CA11600461013 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D43A7871F9CA14300461013 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		1D43A7881F9CA16C00461013 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1D43A78A1F9CA2BF00461013 /* LICENSE-bsd.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "LICENSE-bsd.txt"; sourceTree = "<group>"; };
+		1D43A78B1F9CA2BF00461013 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1D43A78C1F9CA2BF00461013 /* LICENSE-orig.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "LICENSE-orig.txt"; sourceTree = "<group>"; };
+		1D43A78D1F9CA2C000461013 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		1D43A78E1F9CA2C000461013 /* AUTHORS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS.txt; sourceTree = "<group>"; };
+		1D43A78F1F9CA2C000461013 /* LICENSE-gpl3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "LICENSE-gpl3.txt"; sourceTree = "<group>"; };
+		1D43A7901F9CA2C000461013 /* HACKING.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HACKING.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +83,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D43A7731F9B4ED900461013 /* HIDAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D43A7351F9B11AB00461013 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D43A7401F9B11AB00461013 /* Frameworks */ = {
+		1D43A75A1F9B4ED900461013 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,9 +100,11 @@
 		1D43A7191F9B11AB00461013 = {
 			isa = PBXGroup;
 			children = (
+				1D43A7881F9CA16C00461013 /* .gitignore */,
+				1D43A7871F9CA14300461013 /* LICENSE.md */,
+				1D43A7861F9CA11600461013 /* README.md */,
 				1D43A7241F9B11AB00461013 /* LightSwitchUSB-Mac */,
-				1D43A73B1F9B11AB00461013 /* LightSwitchUSB-MacTests */,
-				1D43A7461F9B11AB00461013 /* LightSwitchUSB-MacUITests */,
+				1D43A75F1F9B4ED900461013 /* HIDAPI */,
 				1D43A7231F9B11AB00461013 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,8 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				1D43A7221F9B11AB00461013 /* LightSwitchUSB-Mac.app */,
-				1D43A7381F9B11AB00461013 /* LightSwitchUSB-MacTests.xctest */,
-				1D43A7431F9B11AB00461013 /* LightSwitchUSB-MacUITests.xctest */,
+				1D43A75E1F9B4ED900461013 /* HIDAPI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,34 +125,59 @@
 				1D43A7261F9B11AB00461013 /* AppDelegate.m */,
 				1D43A7281F9B11AB00461013 /* ViewController.h */,
 				1D43A7291F9B11AB00461013 /* ViewController.m */,
+				1D43A7831F9B950800461013 /* LightSwitch.h */,
+				1D43A7841F9B950800461013 /* LightSwitch.m */,
 				1D43A72B1F9B11AB00461013 /* Assets.xcassets */,
 				1D43A72D1F9B11AB00461013 /* Main.storyboard */,
 				1D43A7301F9B11AB00461013 /* Info.plist */,
 				1D43A7311F9B11AB00461013 /* main.m */,
-				1D43A7331F9B11AB00461013 /* LightSwitchUSB_Mac.entitlements */,
+				1D43A7581F9B128C00461013 /* LightSwitchUSB-Mac.entitlements */,
 			);
 			path = "LightSwitchUSB-Mac";
 			sourceTree = "<group>";
 		};
-		1D43A73B1F9B11AB00461013 /* LightSwitchUSB-MacTests */ = {
+		1D43A75F1F9B4ED900461013 /* HIDAPI */ = {
 			isa = PBXGroup;
 			children = (
-				1D43A73C1F9B11AB00461013 /* LightSwitchUSB_MacTests.m */,
-				1D43A73E1F9B11AB00461013 /* Info.plist */,
+				1D43A77C1F9B4EEA00461013 /* hidapi */,
+				1D43A7601F9B4ED900461013 /* HIDAPI.h */,
+				1D43A7611F9B4ED900461013 /* Info.plist */,
+				1D43A77E1F9B4F3D00461013 /* HIDDevice.h */,
+				1D43A77F1F9B4F3D00461013 /* HIDDevice.m */,
 			);
-			path = "LightSwitchUSB-MacTests";
+			path = HIDAPI;
 			sourceTree = "<group>";
 		};
-		1D43A7461F9B11AB00461013 /* LightSwitchUSB-MacUITests */ = {
+		1D43A77C1F9B4EEA00461013 /* hidapi */ = {
 			isa = PBXGroup;
 			children = (
-				1D43A7471F9B11AB00461013 /* LightSwitchUSB_MacUITests.m */,
-				1D43A7491F9B11AB00461013 /* Info.plist */,
+				1D43A78E1F9CA2C000461013 /* AUTHORS.txt */,
+				1D43A7901F9CA2C000461013 /* HACKING.txt */,
+				1D43A78A1F9CA2BF00461013 /* LICENSE-bsd.txt */,
+				1D43A78F1F9CA2C000461013 /* LICENSE-gpl3.txt */,
+				1D43A78C1F9CA2BF00461013 /* LICENSE-orig.txt */,
+				1D43A78D1F9CA2C000461013 /* LICENSE.txt */,
+				1D43A78B1F9CA2BF00461013 /* README.txt */,
+				1D43A7571F9B120700461013 /* hid.m */,
+				1D43A7561F9B11FC00461013 /* hidapi.h */,
 			);
-			path = "LightSwitchUSB-MacUITests";
+			path = hidapi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D43A75B1F9B4ED900461013 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D43A7801F9B4F3D00461013 /* HIDDevice.h in Headers */,
+				1D43A7701F9B4ED900461013 /* HIDAPI.h in Headers */,
+				1D43A77D1F9B4F2400461013 /* hidapi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1D43A7211F9B11AB00461013 /* LightSwitchUSB-Mac */ = {
@@ -141,51 +187,35 @@
 				1D43A71E1F9B11AB00461013 /* Sources */,
 				1D43A71F1F9B11AB00461013 /* Frameworks */,
 				1D43A7201F9B11AB00461013 /* Resources */,
+				1D43A7781F9B4ED900461013 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1D43A7721F9B4ED900461013 /* PBXTargetDependency */,
 			);
 			name = "LightSwitchUSB-Mac";
 			productName = "LightSwitchUSB-Mac";
 			productReference = 1D43A7221F9B11AB00461013 /* LightSwitchUSB-Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1D43A7371F9B11AB00461013 /* LightSwitchUSB-MacTests */ = {
+		1D43A75D1F9B4ED900461013 /* HIDAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D43A74F1F9B11AB00461013 /* Build configuration list for PBXNativeTarget "LightSwitchUSB-MacTests" */;
+			buildConfigurationList = 1D43A7751F9B4ED900461013 /* Build configuration list for PBXNativeTarget "HIDAPI" */;
 			buildPhases = (
-				1D43A7341F9B11AB00461013 /* Sources */,
-				1D43A7351F9B11AB00461013 /* Frameworks */,
-				1D43A7361F9B11AB00461013 /* Resources */,
+				1D43A7591F9B4ED900461013 /* Sources */,
+				1D43A75A1F9B4ED900461013 /* Frameworks */,
+				1D43A75B1F9B4ED900461013 /* Headers */,
+				1D43A75C1F9B4ED900461013 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1D43A73A1F9B11AB00461013 /* PBXTargetDependency */,
 			);
-			name = "LightSwitchUSB-MacTests";
-			productName = "LightSwitchUSB-MacTests";
-			productReference = 1D43A7381F9B11AB00461013 /* LightSwitchUSB-MacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1D43A7421F9B11AB00461013 /* LightSwitchUSB-MacUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D43A7521F9B11AB00461013 /* Build configuration list for PBXNativeTarget "LightSwitchUSB-MacUITests" */;
-			buildPhases = (
-				1D43A73F1F9B11AB00461013 /* Sources */,
-				1D43A7401F9B11AB00461013 /* Frameworks */,
-				1D43A7411F9B11AB00461013 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1D43A7451F9B11AB00461013 /* PBXTargetDependency */,
-			);
-			name = "LightSwitchUSB-MacUITests";
-			productName = "LightSwitchUSB-MacUITests";
-			productReference = 1D43A7431F9B11AB00461013 /* LightSwitchUSB-MacUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = HIDAPI;
+			productName = HIDAPI;
+			productReference = 1D43A75E1F9B4ED900461013 /* HIDAPI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,15 +230,9 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					1D43A7371F9B11AB00461013 = {
+					1D43A75D1F9B4ED900461013 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 1D43A7211F9B11AB00461013;
-					};
-					1D43A7421F9B11AB00461013 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1D43A7211F9B11AB00461013;
 					};
 				};
 			};
@@ -226,8 +250,7 @@
 			projectRoot = "";
 			targets = (
 				1D43A7211F9B11AB00461013 /* LightSwitchUSB-Mac */,
-				1D43A7371F9B11AB00461013 /* LightSwitchUSB-MacTests */,
-				1D43A7421F9B11AB00461013 /* LightSwitchUSB-MacUITests */,
+				1D43A75D1F9B4ED900461013 /* HIDAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -242,14 +265,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D43A7361F9B11AB00461013 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D43A7411F9B11AB00461013 /* Resources */ = {
+		1D43A75C1F9B4ED900461013 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,38 +281,27 @@
 			files = (
 				1D43A72A1F9B11AB00461013 /* ViewController.m in Sources */,
 				1D43A7321F9B11AB00461013 /* main.m in Sources */,
+				1D43A7851F9B950800461013 /* LightSwitch.m in Sources */,
 				1D43A7271F9B11AB00461013 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D43A7341F9B11AB00461013 /* Sources */ = {
+		1D43A7591F9B4ED900461013 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D43A73D1F9B11AB00461013 /* LightSwitchUSB_MacTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D43A73F1F9B11AB00461013 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D43A7481F9B11AB00461013 /* LightSwitchUSB_MacUITests.m in Sources */,
+				1D43A7811F9B4F3D00461013 /* HIDDevice.m in Sources */,
+				1D43A7821F9B5CF200461013 /* hid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D43A73A1F9B11AB00461013 /* PBXTargetDependency */ = {
+		1D43A7721F9B4ED900461013 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1D43A7211F9B11AB00461013 /* LightSwitchUSB-Mac */;
-			targetProxy = 1D43A7391F9B11AB00461013 /* PBXContainerItemProxy */;
-		};
-		1D43A7451F9B11AB00461013 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D43A7211F9B11AB00461013 /* LightSwitchUSB-Mac */;
-			targetProxy = 1D43A7441F9B11AB00461013 /* PBXContainerItemProxy */;
+			target = 1D43A75D1F9B4ED900461013 /* HIDAPI */;
+			targetProxy = 1D43A7711F9B4ED900461013 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,7 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "LightSwitchUSB-Mac/LightSwitchUSB_Mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "LightSwitchUSB-Mac/LightSwitchUSB-Mac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C568EPK3JP;
@@ -434,7 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "LightSwitchUSB-Mac/LightSwitchUSB_Mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "LightSwitchUSB-Mac/LightSwitchUSB-Mac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C568EPK3JP;
@@ -445,61 +450,51 @@
 			};
 			name = Release;
 		};
-		1D43A7501F9B11AB00461013 /* Debug */ = {
+		1D43A7761F9B4ED900461013 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C568EPK3JP;
-				INFOPLIST_FILE = "LightSwitchUSB-MacTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.maxchan.LightSwitchUSB-MacTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightSwitchUSB-Mac.app/Contents/MacOS/LightSwitchUSB-Mac";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HIDAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.HIDAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		1D43A7511F9B11AB00461013 /* Release */ = {
+		1D43A7771F9B4ED900461013 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C568EPK3JP;
-				INFOPLIST_FILE = "LightSwitchUSB-MacTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.maxchan.LightSwitchUSB-MacTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightSwitchUSB-Mac.app/Contents/MacOS/LightSwitchUSB-Mac";
-			};
-			name = Release;
-		};
-		1D43A7531F9B11AB00461013 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C568EPK3JP;
-				INFOPLIST_FILE = "LightSwitchUSB-MacUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.maxchan.LightSwitchUSB-MacUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "LightSwitchUSB-Mac";
-			};
-			name = Debug;
-		};
-		1D43A7541F9B11AB00461013 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C568EPK3JP;
-				INFOPLIST_FILE = "LightSwitchUSB-MacUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.maxchan.LightSwitchUSB-MacUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "LightSwitchUSB-Mac";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HIDAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.maxchan.HIDAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -524,20 +519,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D43A74F1F9B11AB00461013 /* Build configuration list for PBXNativeTarget "LightSwitchUSB-MacTests" */ = {
+		1D43A7751F9B4ED900461013 /* Build configuration list for PBXNativeTarget "HIDAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D43A7501F9B11AB00461013 /* Debug */,
-				1D43A7511F9B11AB00461013 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1D43A7521F9B11AB00461013 /* Build configuration list for PBXNativeTarget "LightSwitchUSB-MacUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D43A7531F9B11AB00461013 /* Debug */,
-				1D43A7541F9B11AB00461013 /* Release */,
+				1D43A7761F9B4ED900461013 /* Debug */,
+				1D43A7771F9B4ED900461013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
